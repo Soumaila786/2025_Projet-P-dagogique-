@@ -1,0 +1,83 @@
+/* Navbar */
+.navbar {
+    background-color: #cec2c0; /* Par exemple orange/rouge */
+    transition: background-color 0.5s; /* effet de transition si tu changes */
+    padding: 0.5rem 1rem;
+}
+
+.navbar .nav-link {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.05s;
+}
+.navbar .nav-link-profil {
+    color: rgb(235, 228, 191);
+    font-weight: 500;
+    padding-top: 4px;
+    margin-right: 4px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #56a5e6; /* Jaune pour l'élément actif ou au survol */
+}
+
+/* le nom de lapplication*/
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(224, 95, 20);
+}
+
+/* Le bouton deconnexion */
+.btn-link.nav-link {
+    color: rgb(253, 0, 0);
+    margin-left: 10px;
+}
+
+.btn-link.nav-link:hover {
+    color: #ff0707;
+}
+
+.navbar-brand img {
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Container pour logo + nom */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centre verticalement le texte avec le logo */
+    gap: 5px;            /* espace entre le logo et le nom */
+}
+
+/* Taille et style du logo */
+.logo {
+    width: 100px;   /* largeur du logo */
+    height: 65px;  /* hauteur du logo */
+    border-radius: 10px; /* coins arrondis optionnels */
+    object-fit: cover;   /* pour garder le ratio de l'image */
+}
+
+/* Style du nom de l'application */
+.app-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* ou la couleur de ton choix */
+}
+
+.btnProfil{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px;
+}

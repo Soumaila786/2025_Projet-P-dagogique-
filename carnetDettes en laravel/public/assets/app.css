@@ -1,0 +1,26 @@
+/* app.css */
+@import "./lib/bootstrap/css/bootstrap.css";
+@import "./main/bareNavigation/navbar.css";
+@import "./main/corps/corps.css";
+@import "./main/footer/footer.css";
+@import "./main/Accueil/home.css";
+@import "./main/Ges-clients/client.css";
+@import "./main/Ges-clients/create.css";
+@import "./main/Dettes/create.css";
+@import "./main/Dettes/index.css";
+@import "./main/user/user.css";
+@import "./main/Paiement/paiement.css";
+@import "./main/TableauBord/tableaubord.css"
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="anchorVoirVentes" prefHeight="607.0" prefWidth="1008.0" styleClass="fondsecondary" stylesheets="@../css/home.css" visible="true" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.controllers.VoirVenteController">
+    <children>
+        <VBox layoutY="8.0" prefHeight="607.0" prefWidth="993.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+            <AnchorPane prefHeight="47.0" prefWidth="988.0">
+                <children>
+                    <Label layoutX="8.0" layoutY="-1.0" prefHeight="45.0" prefWidth="366.0" styleClass="labelTitre" stylesheets="@../css/login.css" text="Listes des ventes" />
+                    <TextField fx:id="textfieldVoirVentesRechercher" layoutX="768.0" layoutY="4.0" prefHeight="37.0" prefWidth="227.0" promptText="Rechercher une vente" styleClass="texfield" />
+                </children>
+            </AnchorPane>
+            <Line endX="881.292724609375" endY="-1.0152657523576636E-5" startX="-100.0" stroke="#10512a" strokeWidth="8.0" />
+            <HBox prefHeight="540.0" prefWidth="988.0">
+                <children>
+                    <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="539.0" prefWidth="989.0">
+                        <children>
+                        <TableView fx:id="tableauVoirVente" layoutX="8.0" layoutY="44.0" prefHeight="487.0" prefWidth="983.0" styleClass="table" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="44.0">
+                            <columns>
+                            <TableColumn fx:id="tableauVoirVenteColReference" prefWidth="175.99999523162842" text="Reférence" />
+                            <TableColumn fx:id="tableauVoirVenteColNomClient" prefWidth="361.3332824707031" text="Nom du client" />
+                                <TableColumn fx:id="tableauVoirVenteColMontant" minWidth="0.0" prefWidth="106.0" text="Montant payé" />
+                                <TableColumn fx:id="tableauVoirVenteColTypeVente" minWidth="0.0" prefWidth="186.66668701171875" text="Type de vente" />
+                              <TableColumn fx:id="tableauVoirVenteColDate" minWidth="0.0" prefWidth="153.3333740234375" text="Date" />
+                            </columns>
+                        </TableView>
+                        <Button fx:id="btnVoirVenteNouveauVente" layoutX="702.0" layoutY="5.0" mnemonicParsing="false" onAction="#ouvrirVenteLibre" prefHeight="25.0" prefWidth="132.0" styleClass="buttonVenteLibre" text="Vente Libre" />
+                        <Button layoutX="851.0" layoutY="6.0" mnemonicParsing="false" onAction="#ouvrirVenteOrdonnance" prefHeight="25.0" prefWidth="132.0" styleClass="buttonEnregistrer" text="Vente Ordonnance" />
+                        </children>
+                    </AnchorPane>
+                </children>
+            </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

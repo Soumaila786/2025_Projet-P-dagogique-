@@ -1,0 +1,113 @@
+/* Conteneur général centré */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 65vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+/* Boîte blanche avec ombre */
+.form-box {
+    background-color:transparent;
+    border: #00000067 solid 2px;
+    padding: 40px;
+    border-radius: 15px;
+    width: 750px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.459);
+    text-align: center;
+}
+
+/* Titre */
+.form-box h2 {
+    color: #000000; /* vert pour succès */
+    margin-bottom: 20px;
+}
+
+/* Bouton retour */
+.btn-retour {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn-retour:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Alert erreurs */
+.alert-errors {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Formulaire */
+.form-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #252424;
+    box-shadow: 0 0 0 2px rgba(40, 167, 69, 0.2);
+}
+
+.form-button {
+    width: 100%;
+    background-color: #161816cc;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #211f1f;
+}
+
+/* Boutons de modification et suppression */
+.btn-modifier {
+    background-color: #0029e0ce;
+    color: rgb(255, 255, 255);
+    padding: 4px 8px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-modifier:hover {
+    background-color: #0029e0;
+}
+
+.btn-supprimer {
+    background-color: #dc3545;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-supprimer:hover {
+    background-color: #c82333;
+}
+
+
+

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorTableauBord" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="1008.0" stylesheets="@../css/login.css" visible="true" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.controllers.TableauBordController">
+   <children>
+      <VBox layoutX="4.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="993.0" styleClass="btn-secondary" stylesheets="@../../css/login.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+            <children>
+               <AnchorPane prefHeight="67.0" prefWidth="993.0">
+               <children>
+                  <HBox layoutY="-16.0" prefHeight="84.0" prefWidth="726.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <children>
+                           <AnchorPane prefHeight="67.0" prefWidth="556.0">
+                           <children>
+                              <Label layoutX="1.0" layoutY="-1.0" prefHeight="33.0" prefWidth="411.0" styleClass="titre1" text="Tableau de bord">
+                                    <font>
+                                       <Font name="Bodoni MT Bold" size="25.0" />
+                                    </font>
+                              </Label>
+                              <Label layoutX="8.0" layoutY="37.0" prefHeight="25.0" prefWidth="419.0" text="Aperçu de l'activité de votre pharmacie " textFill="#0f100f">
+                                    <font>
+                                       <Font name="Cambria Italic" size="14.0" />
+                                    </font>
+                              </Label>
+                           </children>
+                           </AnchorPane>
+                           <AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="431.0" />
+                        </children>
+                  </HBox>
+               </children>
+               </AnchorPane>
+               <AnchorPane prefHeight="13.0" prefWidth="726.0">
+               <children>
+                  <AnchorPane layoutX="2.6666666666666665" layoutY="2.6666666666666665" prefHeight="9.0" prefWidth="723.0" styleClass="box" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="1.0" />
+                  <AnchorPane layoutX="-29.0" layoutY="-99.0" prefHeight="101.33333333333333" prefWidth="726.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <children>
+                           <AnchorPane layoutX="-56.0" layoutY="1.3333333333333333" prefHeight="5.0" prefWidth="726.0" styleClass="barre" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0" />
+                        </children>
+                  </AnchorPane>
+               </children>
+               </AnchorPane>
+               <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="957.0">
+               <children>
+                  <AnchorPane prefHeight="97.0" prefWidth="207.0">
+                        <children>
+                           <VBox layoutX="5.333333333333333" layoutY="6.0" prefHeight="89.0" prefWidth="215.0" styleClass="box1" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <children>
+                              <HBox prefHeight="53.0" prefWidth="212.0">
+                                    <children>
+                                       <Label ellipsisString="" text="        " />
+                                       <Label prefHeight="44.0" prefWidth="172.0" styleClass="soustitre" text="Chiffres d'affaires du jour " textFill="#0c100e">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                       </Label>
+                                       <Label prefHeight="33.0" prefWidth="51.0">
+                                       </Label>
+                                    </children>
+                              </HBox>
+                              <HBox prefHeight="52.0" prefWidth="212.0">
+                                    <children>
+                                       <Label fx:id="labelChiffreDaffaires" alignment="CENTER" prefHeight="41.0" prefWidth="195.0" styleClass="titre2" text="1240.25">
+                                       <font>
+                                          <Font name="Cambria Bold Italic" size="14.0" />
+                                       </font>
+                                       </Label>
+                                    <Label prefHeight="43.0" prefWidth="123.0" styleClass="titre3" text="FCFA" />
+                                    </children>
+                              </HBox>
+                           </children>
+                           </VBox>
+                        </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="252.0">
+                        <children>
+                           <VBox layoutX="16.0" layoutY="6.0" prefHeight="89.0" prefWidth="233.0" styleClass="box1" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="6.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="15.0" prefWidth="233.0" styleClass="title1" text="Vente" />
+                              <HBox prefHeight="25.0" prefWidth="230.0">
+                                    <children>
+                                       <Label prefHeight="20.0" prefWidth="111.0" styleClass="soustitre" text="      Aujourd'hui">
+                                       <font>
+                                          <Font name="Cambria" size="14.0" />
+                                       </font>
+                                       </Label>
+                                       <Label alignment="CENTER" prefHeight="20.0" prefWidth="117.0" styleClass="soustitre" text="Total Vente">
+                                       </Label>
+                                    </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="52.0" prefWidth="212.0">
+                                    <children>
+                                       <Label fx:id="labelVenteDuJour" alignment="CENTER" prefHeight="39.0" prefWidth="128.0" styleClass="titre2" text="45">
+                                       <font>
+                                          <Font name="Cambria Bold Italic" size="14.0" />
+                                       </font>
+                                       </Label>
+                                    <AnchorPane prefHeight="47.0" prefWidth="7.0" styleClass="barre" />
+                                    <Label fx:id="labelVenteTotal" alignment="CENTER" prefHeight="41.0" prefWidth="105.0" styleClass="titre3" text="20" />
+                                    </children>
+                              </HBox>
+                           </children>
+                           </VBox>
+                        </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="237.0" layoutY="10.0" prefHeight="100.0" prefWidth="245.0">
+                        <children>
+                           <VBox layoutX="27.333333333333332" layoutY="6.0" prefHeight="89.0" prefWidth="222.0" styleClass="box1" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="6.0">
+                           <children>
+                              <AnchorPane prefHeight="47.0" prefWidth="213.0">
+                                    <children>
+                                       <Label layoutX="7.0" layoutY="5.0" prefHeight="37.0" prefWidth="61.0" text="           " />
+                                       <Label layoutX="33.0" prefHeight="43.0" prefWidth="128.0" styleClass="soustitre" text="Stock de Produit" />
+                                       <Label layoutX="171.0" prefHeight="41.0" prefWidth="41.0" />
+                                    </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="49.0" prefWidth="213.0">
+                                    <children>
+                                       <Label fx:id="labelStockProduit" alignment="CENTER" layoutX="57.0" layoutY="-2.0" prefHeight="43.333333333333336" prefWidth="219.33333333333334" styleClass="titre2" text="190" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                       <Label ellipsisString="" layoutX="143.0" layoutY="3.0" prefHeight="31.0" prefWidth="67.0" text="            " />
+                                    </children>
+                              </AnchorPane>
+                           </children></VBox>
+                        </children>
+                  </AnchorPane>
+               <AnchorPane prefHeight="100.0" prefWidth="227.0">
+               <children>
+                  <VBox layoutX="26.0" layoutY="6.0" prefHeight="89.0" prefWidth="215.0" styleClass="box1" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="6.0">
+                     <children>
+                        <AnchorPane prefHeight="47.0" prefWidth="213.0">
+                           <children>
+                              <Label layoutX="29.0" prefHeight="41.0" prefWidth="164.0" styleClass="soustitre" text="Commandes en attente" />
+                              <Label layoutX="171.0" prefHeight="41.0" prefWidth="41.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="49.0" prefWidth="213.0">
+                           <children>
+                              <Label fx:id="labelCommandeEnAttente" alignment="CENTER" layoutX="20.0" layoutY="-2.0" prefHeight="44.666666666666664" prefWidth="212.66666666666666" styleClass="titre2" text="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+               </children>
+               </HBox>
+               <AnchorPane prefHeight="350.0" prefWidth="726.0">
+               <children>
+                  <HBox layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="987.0" AnchorPane.bottomAnchor="-23.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <children>
+                           <AnchorPane prefHeight="373.0" prefWidth="470.0">
+                           <children>
+                              <VBox layoutX="4.0" layoutY="12.0" prefHeight="362.0" prefWidth="421.0" styleClass="box1" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="12.0">
+                                    <children>
+                                       <VBox>
+                                       <children>
+                                          <AnchorPane prefHeight="10.0" prefWidth="339.0" />
+                                          <AnchorPane prefHeight="29.0" prefWidth="339.0">
+                                                <children>
+                                                   <Label layoutX="49.0" layoutY="4.0" prefHeight="22.0" prefWidth="253.0" styleClass="venteRecente" text="      Ventes recentes" textFill="#095738">
+                                                   <font>
+                                                      <Font name="Cambria Italic" size="14.0" />
+                                                   </font>
+                                                   
+                                                   </Label>
+                                                </children>
+                                          </AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="49.0" prefHeight="283.0" prefWidth="453.0">
+                                       <children>
+                                          <TableView fx:id="tableauVenteRecente" layoutY="6.0" prefHeight="279.0" prefWidth="457.0" styleClass="table" stylesheets="@../css/home.css">
+                                             <columns>
+                                                <TableColumn fx:id="tableauVentesRecentesColonneReference" prefWidth="120.66664826869965" text="Reference" />
+                                                <TableColumn fx:id="tableauVentesRecentesColonneType" prefWidth="212.66663360595703" text="Type de vente" />
+                                                <TableColumn fx:id="tableauVentesRecentesColonneQuantité" prefWidth="124.66668701171875" text="Quantité" />
+                                             </columns>
+                                                   <columnResizePolicy>
+                                                      <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                   </columnResizePolicy>
+                                          </TableView>
+                                       </children></AnchorPane>
+                                          <AnchorPane layoutX="10.0" layoutY="184.0" prefHeight="67.0" prefWidth="339.0">
+                                                <children>
+                                                   <Button layoutY="2.0" mnemonicParsing="false" onAction="#ouvrirVente" prefHeight="37.0" prefWidth="455.0" styleClass="btnVoirTous" stylesheets="@../css/login.css" text="Voir toutes les ventes " textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <font>
+                                                      <Font size="14.0" />
+                                                   </font>
+                                                   </Button>
+                                                </children>
+                                          </AnchorPane>
+                                       </children>
+                                       </VBox>
+                                    </children>
+                              </VBox>
+                           </children>
+                           </AnchorPane>
+                           <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="373.0" prefWidth="541.0">
+                           <children>
+                              <VBox layoutX="30.0" layoutY="11.333333333333334" prefHeight="362.0" prefWidth="479.0" styleClass="box1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="11.0">
+                              <children>
+                                 <AnchorPane prefHeight="11.0" prefWidth="337.0" />
+                                    <AnchorPane prefHeight="30.0" prefWidth="337.0">
+                                       <children>
+                                          <Label layoutX="52.0" layoutY="1.0" prefHeight="26.0" prefWidth="217.0" styleClass="venteRecente" text="       Alertes du stock" textFill="#076233">
+                                             
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                                 <AnchorPane prefHeight="307.0" prefWidth="471.0">
+                                 <children>
+                                    <TableView fx:id="tableauAlerteStock" layoutX="14.0" layoutY="5.333333333333333" prefHeight="279.0" prefWidth="475.0" styleClass="table" stylesheets="@../css/home.css" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="5.0">
+                                       <columns>
+                                          <TableColumn fx:id="tableauAlertesStockColonneReference" prefWidth="104.66662347316742" text="Reference" />
+                                          <TableColumn fx:id="tableauAlertesStockColonneProduit" prefWidth="179.33330535888672" text="Produit" />
+                                          <TableColumn fx:id="tableauAlertesStockColonneType" prefWidth="118.66668701171875" text="Type" />
+                                          <TableColumn fx:id="tableauAlertesStockColonneQuantite" prefWidth="68.0001220703125" text="Qute" />
+                                       </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                    </TableView>
+                                 </children></AnchorPane>
+                                    <AnchorPane layoutX="11.0" layoutY="189.0" prefHeight="67.0" prefWidth="477.0">
+                                    <children>
+                                       <Button layoutY="3.0" mnemonicParsing="false" onAction="#ouvrirStockProduit" prefHeight="38.0" prefWidth="477.0" styleClass="btnVoirTous" text="Gerer le stock" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                    </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

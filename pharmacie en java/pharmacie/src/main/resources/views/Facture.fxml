@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="332.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.controllers.FactureController">
+   <children>
+      <VBox prefHeight="553.0" prefWidth="332.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="BOTTOM_CENTER" prefHeight="43.0" prefWidth="332.0" stylesheets="@../css/home.css" text="PharmaManager" />
+            <Label alignment="TOP_CENTER" prefHeight="29.0" prefWidth="332.0" text="InfoLine : 226 78612534" />
+            <AnchorPane prefHeight="110.0" prefWidth="332.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="41.0" text="Date : " />
+                  <Label layoutX="14.0" layoutY="37.0" prefHeight="17.0" prefWidth="41.0" text="Client : " />
+                  <Label layoutX="14.0" layoutY="59.0" prefHeight="17.0" prefWidth="57.0" text="Recu N° : " />
+                  <Label layoutX="14.0" layoutY="80.0" prefHeight="17.0" prefWidth="57.0" text="Vendeur : " />
+                  <Label fx:id="labelDateTicket" layoutX="72.0" layoutY="14.0" prefHeight="17.0" prefWidth="252.0" text="Label" />
+                  <Label fx:id="labelClientTicket" layoutX="73.0" layoutY="37.0" prefHeight="17.0" prefWidth="252.0" text="Label" />
+                  <Label fx:id="labelNumeroTicket" layoutX="74.0" layoutY="59.0" prefHeight="17.0" prefWidth="252.0" text="Label" />
+                  <Label fx:id="labelVendeurTicket" layoutX="74.0" layoutY="81.0" prefHeight="17.0" prefWidth="252.0" text="Label" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="313.0" prefWidth="332.0">
+               <children>
+                  <TableView fx:id="tableauTicket" layoutY="6.0" prefHeight="260.0" prefWidth="332.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
+                    <columns>
+                      <TableColumn fx:id="tableauColProduit" prefWidth="137.33328247070312" text="Produit" />
+                      <TableColumn fx:id="tableauColQte" prefWidth="48.66668701171875" text="Qte" />
+                        <TableColumn fx:id="tableauPU" prefWidth="67.3333740234375" text="PU" />
+                        <TableColumn fx:id="tableauMontant" prefWidth="77.33331298828125" text="Montant" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="2.0" prefHeight="17.0" prefWidth="109.0" text="Montant Facture: " />
+                  <Label layoutX="14.0" layoutY="26.0" prefHeight="17.0" prefWidth="69.0" text="Remise : " />
+                  <Label layoutX="13.0" layoutY="48.0" prefHeight="17.0" prefWidth="86.0" text="Montant payé : " />
+                  <Label layoutX="11.0" layoutY="80.0" prefHeight="17.0" prefWidth="99.0" text="Somme versée  : " />
+                  <Label layoutX="11.0" layoutY="102.0" prefHeight="17.0" prefWidth="99.0" text="Monnaie  : " />
+                  <Label alignment="CENTER" layoutX="13.0" layoutY="134.0" prefHeight="17.0" prefWidth="315.0" text="MERCI ET MEILLEUR SANTE" />
+                  <Label fx:id="labelMontantFacture" alignment="CENTER_RIGHT" layoutX="123.0" layoutY="-2.0" prefHeight="25.0" prefWidth="197.0" text="Label" />
+                  <Label fx:id="labelRemise" alignment="CENTER_RIGHT" layoutX="124.0" layoutY="22.0" prefHeight="25.0" prefWidth="197.0" text="Label" />
+                  <Label fx:id="labelMontantPaye" alignment="CENTER_RIGHT" layoutX="124.0" layoutY="46.0" prefHeight="25.0" prefWidth="197.0" text="Label" />
+                  <Label fx:id="labelSommeVersee" alignment="CENTER_RIGHT" layoutX="124.0" layoutY="77.0" prefHeight="25.0" prefWidth="197.0" text="Label" />
+                  <Label fx:id="labelMonnaie" alignment="CENTER_RIGHT" layoutX="124.0" layoutY="101.0" prefHeight="25.0" prefWidth="197.0" text="Label" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
