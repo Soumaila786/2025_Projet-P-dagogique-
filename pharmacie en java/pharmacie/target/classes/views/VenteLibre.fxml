@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorVenteLibre" prefHeight="500.0" prefWidth="900.0" styleClass="fondsecondary" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projet.controllers.VenteLibreController">
+   <children>
+      <VBox layoutX="7.0" prefHeight="500.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="39.0" prefWidth="780.0">
+               <children>
+                  <AnchorPane prefHeight="49.0" prefWidth="653.0" />
+                  <TextField fx:id="textfieldRechercherProduit" prefHeight="34.0" prefWidth="215.0" promptText="Rechercher un produit" styleClass="texfield">
+                     <HBox.margin>
+                        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="449.0" prefWidth="780.0" spacing="12.0">
+               <children>
+                  <VBox prefHeight="431.0" prefWidth="421.0" spacing="5.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="416.0" text="Ajouter des produits au panier " />
+                        <TableView fx:id="tableauPanier" prefHeight="286.0" prefWidth="411.0" styleClass="table">
+                           <columns>
+                           <TableColumn fx:id="tableauPanierColProduit" prefWidth="154.66668224334717" text="Produit" />
+                           <TableColumn fx:id="tableauPanierColPrix" prefWidth="90.66661071777344" text="Prix" />
+                              <TableColumn fx:id="tableauPanierColQuantite" prefWidth="72.00006103515625" text="Quantité" />
+                              <TableColumn fx:id="tableauPanierColSousTotal" prefWidth="100.00001525878906" text="Sous Total" />
+                           </columns>
+                        </TableView>
+                        <HBox prefHeight="35.0" prefWidth="411.0">
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="107.0" text="Montant total : " />
+                              <Label fx:id="labelMontantTotal" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="125.0" styleClass="texfield" text="20000">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Label layoutX="117.0" layoutY="10.0" prefHeight="35.0" prefWidth="203.0" text="FCFA" />
+                           </children>
+                        </HBox>
+                        <AnchorPane prefHeight="86.0" prefWidth="411.0">
+                           <children>
+                              <Button layoutX="25.0" layoutY="18.0" mnemonicParsing="false" onAction="#validerVente" prefHeight="25.0" prefWidth="141.0" styleClass="buttonEnregistrer" text="Valider et Imprimer" />
+                              <Button layoutX="185.0" layoutY="18.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="141.0" styleClass="buttonAnnuler" text="Annuler" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tableauListeProduit" prefHeight="431.0" prefWidth="469.0" styleClass="table">
+                     <columns>
+                        <TableColumn fx:id="tableauListeProduitColReference" prefWidth="75.0" text="Reference" />
+                        <TableColumn fx:id="tableauListeProduitColProduit" prefWidth="160.6667251586914" text="Produit" />
+                        <TableColumn fx:id="tableauListeProduitColPrix" prefWidth="65.99998474121094" text="Prix" />
+                        <TableColumn fx:id="tableauListeProduitColQuantite" prefWidth="55.3333740234375" text="Qte" />
+                        <TableColumn fx:id="tableauListeProduitColType" prefWidth="110.0" text="Type" />
+                     </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@../css/login.css" />
+      <URL value="@../css/home.css" />
+   </stylesheets>
+</AnchorPane>

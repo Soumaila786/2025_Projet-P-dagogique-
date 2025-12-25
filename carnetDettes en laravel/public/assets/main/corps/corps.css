@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color:linear-gradient(#24244ec1,#5c5c885d);
+    flex-direction: column;
+    min-height: 100vh; /* occupe toute la hauteur de l’écran */
+}
+
+main {
+    flex: 1; /* pousse le footer vers le bas */
+}

@@ -1,0 +1,139 @@
+
+
+/* Container général */
+.paiement-container {
+    width: 90%;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Titre */
+.page-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Actions : bouton + recherche */
+.action {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-ajouter {
+    background-color: #28a745;
+    color: white;
+    padding: 8px ;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-ajouter:hover {
+    background-color: #218838;
+}
+
+/* Formulaire de recherche */
+.search-form input[type="search"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 6px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Messages de succès */
+.alert-success {
+    padding: 10px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+/* Table des clients */
+.paiement-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.paiement-table th, .paiement-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.paiement-table th {
+    background-color: #24244ec1;
+    color: white;
+}
+
+.paiement-table tr:nth-child(even) {
+    background-color: #24244e44;
+}
+
+/* Boutons de modification et suppression */
+.btn-modifier {
+    background-color: #0029e0ce;
+    color: rgb(255, 255, 255);
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 22px;
+}
+
+.btn-modifier:hover {
+    background-color: #0029e0;
+}
+
+.btn-supprimer {
+    background-color: #dc3545;
+    color: white;
+    padding: 4px 8px ;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-supprimer:hover {
+    background-color: #c82333;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.no-paiement {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+
+.form-ajout {
+    background-color: #fff;
+    padding: 40px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.btn-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}

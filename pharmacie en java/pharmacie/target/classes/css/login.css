@@ -1,0 +1,378 @@
+.left-form{
+    -fx-background-color : linear-gradient(to bottom right,#083a08,#225427);
+    -fx-border-color : #022c12;
+}
+.card {
+  -fx-background-color: #ffffff59;
+  -fx-border-color: #00640000;
+  -fx-border-radius: 15px;
+  -fx-background-radius: 15px;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 24, 0.2, 0, 4);
+  -fx-padding: 16;
+}
+
+.logo {
+  -fx-pref-width: 48; -fx-pref-height: 48;
+  -fx-alignment: center;
+  -fx-background-color: #e7ebf0;
+  -fx-background-radius: 24;
+  -fx-text-fill: white;
+  -fx-font-weight: 800;
+  -fx-font-size: 26px;
+  -fx-label-padding: 0 0 2 0; /* léger centrage vertical */
+}
+
+.title { -fx-font-size: 22px; -fx-font-weight: 700; }
+.subtitle { -fx-text-fill: #606770; -fx-font-size: 13px; }
+
+.title1 { -fx-font-size: 18px; -fx-font-weight: 700; }
+
+.btn-primary {
+  -fx-background-color: transparent;
+  -fx-height :8;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-padding: 2;
+  -fx-margin: 5;
+  -fx-cursor : hand;
+  
+}
+.btn-primary:hover { -fx-background-color: #098d1c; }
+
+
+.btn-secondary {
+  -fx-background-color: #bdc3bd75;
+  -fx-text-fill: white;
+  -fx-font-weight: 700;
+  -fx-padding: 10 10 10 10;
+}
+.btnNew{
+  -fx-background-color:#053612;
+  -fx-text-fill: white;
+  -fx-cursor:hand;
+
+}
+.btnNew:hover{
+  -fx-background-color: #098d1c;
+  -fx-text-fill: rgb(248, 251, 249);
+}
+.titre1{
+  -fx-text-fill: rgb(4, 46, 4);
+  -fx-font-weight: bold;
+  -fx-font-size :36px;
+  -fx-font-family: 'Cambria';
+}
+.titre2{
+  -fx-text-fill:#e009b1;
+  -fx-font-weight: bold;
+  -fx-font-size :20px;
+  -fx-font-family: 'Calibri';
+
+}
+.titre3{
+  -fx-text-fill:#1009e0;
+  -fx-font-weight: bold;
+  -fx-font-size :20px;
+  -fx-font-family: 'Calibri';
+
+}
+
+.soustitre{
+  -fx-text-fill: rgb(4, 46, 4);
+  -fx-font-weight: bold;
+  -fx-font-size :12px;
+  -fx-font-family: 'Cambria';
+}
+
+.box1{
+  -fx-background-color: #04340b00;
+  -fx-text-fill: rgb(4, 46, 4);
+  -fx-border-color:#2b2b2b48;
+  -fx-border-radius:15;
+}
+
+
+.btnVoirTous{
+  -fx-background-color: #03420c;
+  -fx-border-rarius:10;
+  -fx-height :8;
+  -fx-text-fill: rgb(247, 250, 248);
+  -fx-font-size :12px;
+  -fx-font-family: 'Cambria';
+  -fx-font-weight: bold;
+  -fx-padding: 2;
+  -fx-margin: 5;
+  -fx-cursor : hand;
+}
+
+.btnVoirTous:hover{
+  -fx-background-color: #098d1c;
+  -fx-text-fill: rgb(248, 251, 249);
+}
+
+.barre{
+  -fx-background-color: #03420c;
+
+}
+
+.venteRecente{
+  -fx-font-weight: normal;
+  -fx-font-size :18px;
+  -fx-font-family: 'Cambria';
+}
+
+.btnClose{
+  -fx-background-color: #0a5615;
+  -fx-border-radius:10;
+  -fx-height :8;
+  -fx-text-fill: rgb(255, 255, 255);
+  -fx-font-size :12px;
+  -fx-font-family: 'Cambria';
+  -fx-font-weight: bold;
+  -fx-padding: 2;
+  -fx-margin: 5;
+  -fx-cursor : hand;
+}
+
+.btnClose:hover{
+  -fx-background-color: #b50303;
+  -fx-font-weight: bold;
+  -fx-text-fill: #ffffff;
+}
+
+.vrecente {
+  -fx-text-fill-color: #c0c4c032;
+  -fx-font-weight: normal;
+  -fx-font-size :15px;
+  -fx-font-family: 'Cambria';
+}
+.sousvrecente {
+  -fx-text-fill-color: #6d706d28;
+  -fx-font-weight: normal;
+  -fx-font-size :12px;
+  -fx-font-family: 'Arial';
+}
+
+.root {
+    -fx-background-color: #49504b5f; /* couleur d’arrière-plan claire comme Facebook */
+    -fx-font-family: "Arial";
+}
+
+.reference{
+  -fx-text-fill: rgb(255, 255, 255);
+  -fx-background-color: #ef0606e1;
+  -fx-border-radius: 55;
+  -fx-padding: 5;
+  -fx-font-weight: normal;
+  -fx-font-size :14px;
+  -fx-font-family: 'Cambria';
+}
+
+/* Conteneur central (VBox ou AnchorPane) */
+.login-container {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 30;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 4);
+}
+
+/* Titre Facebook */
+.title {
+    -fx-font-size: 28px;
+    -fx-text-fill: #07430d;
+    -fx-font-weight: bold;
+}
+.table{
+  -fx-background-color: #ffffff75;
+  -fx-border-radius: 10;
+  -fx-font-family: 'Cambria';
+  -fx-font-size :14px;
+  -fx-font-weight: 500;
+  -fx-text-fill: rgb(4, 46, 4);
+}
+
+/* Champs de texte */
+.text-field {
+  -fx-background-color: #ffffff75;
+  -fx-background-radius: 10;
+  -fx-border-color: #05350948;
+  -fx-border-width: 2;
+  -fx-border-radius: 10;
+  -fx-font-family: 'Cambria';
+  -fx-font-size :16px;
+  -fx-font-weight: 500;
+  -fx-text-fill: rgb(4, 46, 4);
+}
+
+.text-field:focused {
+    -fx-border-color: #07430da4;
+    -fx-border-width: 2;
+}
+
+/* Bouton principal (Se connecter) */
+.login-button {
+    -fx-background-color: #07430d;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.login-button:hover {
+    -fx-background-color: #15b513cc;
+}
+
+/* Bouton "Créer un compte" */
+.create-button {
+    -fx-background-color: #42b72a;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.create-button:hover {
+    -fx-background-color: #36a420;
+}
+
+/* Lien "Mot de passe oublié" */
+.forgot-link {
+    -fx-text-fill: #1877f2;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-underline: false;
+}
+
+.svg-path {
+    -fx-fill: transparent;
+    -fx-stroke-width: 2px;         /* Épaisseur du contour */
+    -fx-stroke-linecap: round;     /* Style de l'extrémité du contour */
+    -fx-stroke-linejoin: round;    /* Style de l'angle du contour */
+    -fx-scale-x: 1; /* Échelle horizontale */
+    -fx-scale-y: 1; /* Échelle verticale */
+}
+
+.svg-path1 {
+    -fx-fill: transparent;
+    -fx-stroke-width: 2px;         /* Épaisseur du contour */
+    -fx-stroke-linecap: round;     /* Style de l'extrémité du contour */
+    -fx-stroke-linejoin: round;    /* Style de l'angle du contour */
+    -fx-scale-x: 1.4; /* Échelle horizontale */
+    -fx-scale-y: 1.4; /* Échelle verticale */
+}
+
+.svg-white {
+    -fx-stroke: white; 
+}
+
+.svg-green {
+    -fx-stroke: #097909; 
+}
+
+.svg-red {
+    -fx-stroke: rgb(184, 10, 10); 
+}
+
+.svg-black {
+    -fx-stroke: rgb(0, 0, 0); 
+}
+
+
+
+
+.close {
+  -fx-background-color: rgba(255, 255, 255, 0);
+  -fx-cursor:hand;
+
+}
+
+.close .svg-path {
+  -fx-stroke: black;
+  -fx-scale-x:.5;
+  -fx-scale-y:.5;
+}
+
+.close:hover {
+  -fx-background-color: red;
+}
+
+.close:hover .svg-path  {
+  -fx-stroke: white;
+}
+
+.close1 {
+  -fx-background-color:transparent;
+  -fx-cursor:hand;
+}
+
+.close1 .svg-path {
+  -fx-stroke: black;
+  -fx-scale-x:.5;
+  -fx-scale-y:.5;
+}
+
+.close1:hover {
+  -fx-background-color:white;
+
+}
+
+.close1:hover .svg-path {
+  -fx-stroke: rgba(245, 236, 236, 0.929);
+}
+
+.top{
+  -fx-background-color:#9cafa1
+}
+
+.buttonEnregistrer{
+  -fx-background-color: #03420c;
+  -fx-border-rarius:10;
+  -fx-height :8;
+  -fx-text-fill: rgb(247, 250, 248);
+  -fx-font-size :12px;
+  -fx-font-family: 'Cambria';
+  -fx-font-weight: bold;
+  -fx-padding: 2;
+  -fx-margin: 5;
+  -fx-cursor : hand;
+}
+.buttonEnregistrer:hover{
+  -fx-background-color: #098d1c;
+  -fx-text-fill: rgb(248, 251, 249);
+}
+
+.buttonAnnuler{
+  -fx-background-color: #c42323;
+  -fx-border-rarius:10;
+  -fx-height :8;
+  -fx-text-fill: rgb(247, 250, 248);
+  -fx-font-size :12px;
+  -fx-font-family: 'Cambria';
+  -fx-font-weight: bold;
+  -fx-padding: 2;
+  -fx-margin: 5;
+  -fx-cursor : hand;
+}
+.buttonAnnuler:hover{
+  -fx-background-color: #e01616;
+  -fx-text-fill: rgb(248, 251, 249);
+}
+
+.buttonImprimer{
+  -fx-background-color: #0e5320b5;
+  -fx-border-rarius:10;
+  -fx-height :8;
+  -fx-text-fill: rgb(247, 250, 248);
+  -fx-font-size :12px;
+  -fx-font-family: 'Cambria';
+  -fx-font-weight: bold;
+  -fx-padding: 2;
+  -fx-margin: 5;
+  -fx-cursor : hand;
+}
+.buttonImprimer:hover{
+  -fx-background-color: #030c67;
+  -fx-text-fill: rgb(248, 251, 249);
+}
