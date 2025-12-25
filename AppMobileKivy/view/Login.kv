@@ -1,0 +1,71 @@
+<LoginScreen>:
+    name: "login"
+    FitImage:
+        source: "images/fond.jpg"
+        allow_stretch: True
+        keep_ratio: False
+
+    AnchorLayout:
+        anchor_x: "center"
+        anchor_y: "center"
+        
+        MDCard:
+            orientation: "vertical"
+            size_hint: 0.8, None   # 80% de la largeur, hauteur automatique
+            height: self.minimum_height
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 3
+            padding: "25dp"
+            spacing: "20dp"
+            radius: [20, ]
+
+            MDBoxLayout:
+                orientation: "vertical"
+                size_hint_y: None
+                height: self.minimum_height
+                spacing: "15dp"
+
+                MDLabel:
+                    text: "CONNEXION"
+                    font_style: "H5"
+                    halign: "center"
+                    theme_text_color: "Primary"
+                Widget:
+                MDSeparator:
+                    height: "1dp"
+
+                MDTextField:
+                    id: name_input
+                    hint_text: "Nom d'utilisateur"
+                    text: "amidouUser"
+                    mode: "round"
+                    size_hint_y: None
+                    helper_text_mode: "on_focus"
+                    icon_left: "account"
+                    required: True
+
+                MDTextField:
+                    id: password_input
+                    text: "1111"
+                    hint_text: "Mot de passe"
+                    password: True
+                    mode: "round"
+                    size_hint_y: None
+                    helper_text_mode: "on_focus"
+                    icon_left: "eye-off"
+                    required: True
+
+                
+                Widget:
+
+                MDRectangleFlatIconButton:
+                    text: "Se Connecter"
+                    icon: "login"
+                    icon_color: 1,1,1,1
+                    pos_hint: {"center_x": 0.5}
+                    text_color: 1,1,1,1
+                    md_bg_color: 0,0,0,1
+                    size_hint_x: 0.6  
+                    height: "50dp"
+                    font_size: "18sp"
+                    on_release: root.authentifier()

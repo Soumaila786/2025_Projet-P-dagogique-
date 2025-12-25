@@ -1,0 +1,67 @@
+<SortieScreen>:
+    name: "ecran_ScannerSortie"
+
+    MDBoxLayout:
+        orientation: "vertical"
+
+        MDTopAppBar:
+            title: "Scanner Sortie Engin"
+            md_bg_color: 0, 0, 0, 1
+            specific_text_color: 1, 1, 1, 1
+            left_action_items: [["menu", root.showDrawer]]
+
+        MDBoxLayout:
+            orientation:"vertical"
+            padding:dp(10)
+            spacing:dp(10)
+
+            MDLabel:
+                id: qr_message
+                text: ""
+                halign: "center"
+                theme_text_color: "Custom"
+                text_color: 0, 0, 0, 1
+                font_style: "H6"
+
+        AnchorLayout:
+            anchor_x: "center"
+            anchor_y: "center"
+            orientation: "vertical"
+
+
+            MDCard:
+                orientation: "vertical"
+                size_hint: None, None  
+                height:250
+                width:350
+                pos_hint: {"center_x": 0.5,"center_y":.5}
+                elevation: 5
+                padding: "25dp"
+                spacing: "20dp"
+                radius: [20, ]
+
+                MDBoxLayout:
+                    id: conteneur_camera
+
+        MDBoxLayout:
+            orientation:"horizontal"
+            padding:dp(10)
+            spacing:dp(10)
+            pos_hint: {"center_x": 0.5, "center_y": 0.5} 
+
+            MDRectangleFlatIconButton:
+                text: "Passer au scannage"
+                icon: "qrcode-scan" 
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+                line_color: 0, 0, 0, 0    
+                md_bg_color: 0, 0, 0, 1   
+                on_release: root.demarrer_camera()
+            MDRectangleFlatIconButton:
+                text: "Fermer Caméra" 
+                theme_text_color: "Custom"
+                text_color: 1, 1, 1, 1
+                line_color: 0, 0, 0, 0    
+                md_bg_color: 0, 0, 0, 1   
+                on_release: root.arreter_camera()
+

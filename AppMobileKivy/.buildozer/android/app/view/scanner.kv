@@ -1,0 +1,32 @@
+MDScreen:
+    name: "scanner"
+    FloatLayout:
+        FitImage:
+            source: "ima.jpg"
+            size_hint: 1, 1
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            keep_ratio: True
+            allow_stretch: False
+
+        MDTopAppBar:
+            title: " Scanner"
+            md_bg_color: 0, 0, 0, 1  # noir opaque
+            specific_text_color: 1, 1, 1, 1  # texte blanc
+            elevation: 4
+            pos_hint: {"top": 1}
+            left_action_items: [["menu", lambda x: nav_drawer.set_state("toggle")]]   
+        MDBoxLayout:
+            size_hint_x: 0.2
+            spacing: dp(8)
+            padding: dp(8)
+            MDRaisedButton:
+                text: "Scanner Entrée Engin"
+                on_release: app.passer_abonnement()
+                size_hint_x: None
+                width: dp(140)
+
+            MDRaisedButton:
+                text: "Scanner Sortie Engin"
+                on_release: app.voir_liste()
+                size_hint_x: None
+                width: dp(100)

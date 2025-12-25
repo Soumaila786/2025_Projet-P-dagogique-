@@ -1,0 +1,294 @@
+<AccueilScreen>:
+    name: "accueil"
+
+    MDBoxLayout:
+        orientation:"vertical"
+
+        MDTopAppBar:
+            title: " Tableau de bord"
+            md_bg_color: 0, 0, 0, 1  # noir opaque
+            specific_text_color: 1, 1, 1, 1  # texte blanc
+            elevation:4
+            pos_hint: {"top": 1}
+            left_action_items: [["menu", root.showDrawer]] 
+
+        MDBoxLayout:
+            orientation :"vertical"
+            padding:dp(50)
+            spacing:dp(25)
+            pos_hint: {"center_x": .5}
+
+            
+            MDBoxLayout:
+                orientation: "horizontal"
+                spacing:dp(10)
+                pos_hint: {"center_x": .5}
+
+                MDCard:
+                    style: "outlined"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    padding: "4dp"
+                    size_hint: None, None
+                    size: "300", "90"
+                    elevation:4
+                    orientation:"vertical"
+
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDLabel:
+                            text: "Utilisateurs "
+                            font_style: "H5"
+                            theme_text_color: "Custom"
+                            text_color:0, 0, 1, 1
+                            halign: "center"
+                            bold : True
+
+                        MDIconButton:
+                            icon: "account-circle"  
+                            font_size: "50dp"
+                            theme_text_color: "Custom"
+                            text_color: 0, 0, 0.5, 1
+                            halign:"left"
+                    Widget:
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+                        padding:dp(10)
+                        MDLabel:
+                            text: "Nombre total"
+                            font_style: "H6"
+                            theme_text_color: "Custom"
+                            halign: "center"
+                        MDLabel:
+                            id:user
+                            text: ""
+                            font_style: "H4"
+                            theme_text_color: "Custom"
+                            text_color: 1, 0, 0,1
+                            halign: "center"
+                    Widget:
+            
+            MDSeparator:
+                height:"5dp"
+            MDBoxLayout:
+                orientation: "horizontal"
+                spacing:dp(10)
+                pos_hint: {"center_x": .5}
+
+                MDCard:
+                    style: "outlined"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    padding: "4dp"
+                    size_hint: None, None
+                    size: "300", "90"
+                    elevation:4
+                    orientation:"vertical"
+
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDLabel:
+                            text: "Abonnements "
+                            font_style: "H5"
+                            theme_text_color: "Custom"
+                            text_color:0, 0, 1, 1
+                            halign: "center"
+                            bold : True
+
+                        MDIconButton:
+                            icon: "card-account-details"
+                            font_size: "50dp"
+                            theme_text_color: "Custom"
+                            text_color: 0, 0, 0.5, 1
+                            halign:"left"
+                    Widget:
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+                        padding:dp(10)
+                        MDLabel:
+                            text: "Nombre total"
+                            font_style: "H6"
+                            theme_text_color: "Custom"
+                            halign: "center"
+                        MDLabel:
+                            id:abonnement
+                            text: ""
+                            font_style: "H4"
+                            theme_text_color: "Custom"
+                            text_color: 1, 0, 0,1
+                            halign: "center"
+                    Widget:
+            MDSeparator:
+                height:"5dp"
+            MDBoxLayout:
+                orientation: "horizontal"
+                spacing:dp(10)
+                pos_hint: {"center_x": .5}
+
+                MDCard:
+                    style: "outlined"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    padding: "4dp"
+                    size_hint: None, None
+                    size: "300", "90"
+                    elevation:4
+                    orientation:"vertical"
+
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDLabel:
+                            text: "Paiements"
+                            font_style: "H5"
+                            theme_text_color: "Custom"
+                            text_color:0, 0, 1, 1
+                            halign: "center"
+                            bold : True
+
+                        MDIconButton:
+                            icon: "currency-usd"  
+                            font_size: "50dp"
+                            theme_text_color: "Custom"
+                            text_color: 0, 0, 0.5, 1
+                            halign:"left"
+                    Widget:
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+                        padding:dp(10)
+                        MDLabel:
+                            text: "Effectués"
+                            font_style: "H6"
+                            theme_text_color: "Custom"
+                            halign: "center"
+                        MDLabel:
+                            id :paiement
+                            text: ""
+                            font_style: "H4"
+                            theme_text_color: "Custom"
+                            text_color: 1, 0, 0,1
+                            halign: "center"
+                    Widget:
+
+            MDSeparator:
+                height:"5dp"
+            MDBoxLayout:
+                orientation: "horizontal"
+                spacing:dp(10)
+                pos_hint: {"center_x": .5}
+
+                MDCard:
+                    style: "outlined"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    padding: "4dp"
+                    size_hint: None, None
+                    size: "300", "90"
+                    elevation:4
+                    orientation:"vertical"
+
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDLabel:
+                            text: "Les entrées"
+                            font_style: "H5"
+                            theme_text_color: "Custom"
+                            text_color:0, 0, 1, 1
+                            halign: "center"
+                            bold : True
+
+                        MDIconButton:
+                            icon: "login"  
+                            font_size: "50dp"
+                            theme_text_color: "Custom"
+                            text_color: 0, 0, 0.5, 1
+                            halign:"left"
+                    Widget:
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+                        padding:dp(10)
+                        MDLabel:
+                            text: "total"
+                            font_style: "H6"
+                            theme_text_color: "Custom"
+                            halign: "center"
+                        MDLabel:
+                            id:entree
+                            text: ""
+                            font_style: "H4"
+                            theme_text_color: "Custom"
+                            text_color: 1, 0, 0,1
+                            halign: "center"
+                    Widget:
+            MDSeparator:
+                height:"5dp"
+            
+            MDBoxLayout:
+                orientation: "horizontal"
+                spacing:dp(10)
+                pos_hint: {"center_x": .5}
+
+                MDCard:
+                    style: "outlined"
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    padding: "4dp"
+                    size_hint: None, None
+                    size: "300", "90"
+                    elevation:4
+                    orientation:"vertical"
+
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDLabel:
+                            text: "Engin sorties"
+                            font_style: "H5"
+                            theme_text_color: "Custom"
+                            text_color:0, 0, 1, 1
+                            halign: "center"
+                            bold : True
+                        MDIconButton:
+                            icon: "logout"  
+                            font_size: "50dp"
+                            theme_text_color: "Custom"
+                            text_color: 0, 0, 0.5, 1
+                            halign:"left"
+                    Widget:
+                    BoxLayout:
+                        orientation: "horizontal"
+                        size_hint_y: None
+                        height: self.minimum_height
+                        padding:dp(10)
+                        MDLabel:
+                            text: "total"
+                            font_style: "H6"
+                            theme_text_color: "Custom"
+                            halign: "center"
+                        MDLabel:
+                            id :sortie
+                            text: ""
+                            font_style: "H4"
+                            theme_text_color: "Custom"
+                            text_color: 1, 0, 0, 1
+                            halign: "center"
+                    Widget:
+
+
+            

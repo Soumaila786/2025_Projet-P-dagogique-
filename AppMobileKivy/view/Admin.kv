@@ -1,0 +1,87 @@
+<AdminScreen>:
+    name: "admin"
+    
+    MDNavigationLayout:
+        id: conteneur_principal
+
+        MDScreenManager:
+            id:ecran_principal
+
+        MDNavigationDrawer:
+            id: nav_drawer
+            radius: 0, 16, 16, 0
+
+            MDNavigationDrawerMenu:
+                
+                BoxLayout:
+                    orientation: "vertical"
+                    padding: 10
+                    spacing: 10
+                    size_hint_y: None
+                    height: self.minimum_height
+
+                    MDCard:
+                        size_hint: None, None
+                        size: dp(250), dp(200)
+                        radius: [75,]  # cercle parfait (demi-taile hauteur)
+                        md_bg_color: 1, 1, 1, 1  # fond bleu opaque
+                        elevation: 4
+                        pos_hint: {"center_x": 0.5}
+
+                        FitImage:
+                            source: "images/pkm.png"
+                            radius: [75,]
+                            keep_ratio: True
+                            allow_stretch: True
+
+                
+                MDNavigationDrawerDivider:   
+
+                MDLabel:
+                    text: "MENU"
+                    font_style: "H5"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                    
+
+                MDNavigationDrawerDivider:
+
+
+                MDNavigationDrawerItem:
+                    text: "Accueil"
+                    icon: "home"
+                    on_release:
+                        ecran_principal.current = "accueil"
+                        nav_drawer.set_state("close")
+
+                MDNavigationDrawerItem:
+                    text: "Utilisateurs"
+                    icon: "account-multiple"  # Utilisateurs
+                    on_release:
+                        ecran_principal.current = "ecran_utilisateur"
+                        nav_drawer.set_state("close")
+
+                MDNavigationDrawerItem:
+                    text: "Abonnements"
+                    icon: "card-account-details"  # Carte avec infos compte
+                    on_release:
+                        ecran_principal.current = "ecran_abonnement"
+                        nav_drawer.set_state("close")
+
+                MDNavigationDrawerItem:
+                    text: "Paiements"
+                    icon: "credit-card"  # Paiements
+                    on_release:
+                        ecran_principal.current = "paiements"
+                        nav_drawer.set_state("close")
+
+                
+
+                MDNavigationDrawerItem:
+                    text: "Déconnexion"
+                    icon: "logout"
+                    on_release: app.retour_login()
+                        nav_drawer.set_state("close")
+
+
+                MDNavigationDrawerDivider:

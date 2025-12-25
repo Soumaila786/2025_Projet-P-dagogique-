@@ -1,0 +1,77 @@
+<AbonnementScreen>:
+    name: "ecran_abonnement"
+        
+    MDBoxLayout:
+        orientation: "vertical"
+        
+        MDTopAppBar:
+            title: "Gestion des Abonnements"
+            md_bg_color: 0, 0, 0, 1  # noir opaque
+            specific_text_color: 1, 1, 1, 1  # texte blanc
+            elevation: 4
+            pos_hint: {"top": 1}
+            left_action_items: [["menu", root.showDrawer]]                  
+
+  
+        BoxLayout:
+            orientation: "vertical"
+            padding: dp(5)
+            spacing: dp(5)
+
+            Widget:
+                size_hint_y: 0.05
+
+            MDBoxLayout:
+                orientation: "horizontal"
+                size_hint_y: None
+                height: "50dp"
+                spacing: dp(10)
+                padding: dp(10)
+
+                MDTextField:
+                    id: search_input
+                    hint_text: "Rechercher un Abonnement"
+                    mode: "rectangle"
+                    size_hint_x: 0.6
+                    height: "50dp"
+                    on_text: root.rechercher_abonnement(self.text)
+
+                MDIconButton:
+                    icon: "plus"   
+                    user_font_size: "24sp"
+                    md_bg_color: 0, 0, 0, 1 
+                    theme_text_color: "Custom"
+                    text_color: 1,1,1,1
+                    size_hint: 0.1, None
+                    height: "50dp"
+                    on_release: root.enregistrer()
+
+                MDIconButton:
+                    icon: "refresh"  
+                    user_font_size: "24sp"
+                    md_bg_color:  0, 0, 0, 1 
+                    theme_text_color: "Custom"
+                    text_color: 1,1,1,1
+                    size_hint: 0.1, None
+                    height: "50dp"
+                    on_release: root.charger_abonnements()
+
+            Widget:
+                size_hint_y: 0.015
+
+            MDLabel:
+                text: "Liste des Abonnements"
+                halign: "center"
+                size_hint_y: 0.05
+                font_style: "H6"
+
+            Widget:
+                size_hint_y: 0.015
+
+            MDSeparator:
+                height: dp(2)
+
+            ScrollView:
+                size_hint_y: 0.78
+                MDList:
+                    id: liste_abonnement
